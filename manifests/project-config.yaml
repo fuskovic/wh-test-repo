@@ -5,7 +5,11 @@ metadata:
   namespace: kargo-demo
 spec:
   webhookReceivers: 
-    - name: gh-wh-receiver
-      github:
+    # - name: gh-wh-receiver
+    #   github:
+    #     secretRef:
+    #       name: gh-wh-secret
+    - name: quay-wh-receiver
+      quay:
         secretRef:
-          name: gh-wh-secret
+          name: quay-wh-secret

@@ -1,3 +1,3 @@
 # README
 
-live demo
+quay demo 
