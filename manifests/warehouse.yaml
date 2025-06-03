@@ -15,4 +15,4 @@ spec:
   #     strictSemvers: false
   - image:
       repoURL: quay.io/faris_huskovic/webhook-poc
-      imageSelectionStrategy: NewestBuild
+      semverConstraint: ^1.26.0

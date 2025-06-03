@@ -1,9 +1,9 @@
 .PHONY: quay-build
 quay-build:
 	@echo "Building the project..."
-	@docker build -t quay.io/faris_huskovic/webhook-poc:$$(git rev-parse --short HEAD) .
+	@docker build -t quay.io/faris_huskovic/webhook-poc:1.28.0 .
 
 .PHONY: quay-push
 quay-push: quay-build
 	@echo "Pushing the image to Quay..."
-	@docker push quay.io/faris_huskovic/webhook-poc:$$(git rev-parse --short HEAD)
+	@docker push quay.io/faris_huskovic/webhook-poc:1.28.0
