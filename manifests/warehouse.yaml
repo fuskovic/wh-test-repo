@@ -9,8 +9,14 @@ spec:
   # with regular reconciliation refreshes. Same thing for disabling strict semver.
   interval: 30m
   subscriptions:
+  # github
   # - git:
   #     repoURL: https://github.com/fuskovic/wh-test-repo.git
+  #     branch: main
+  #     strictSemvers: false
+  # gitlab
+  # - git:
+  #     repoURL: https://gitlab.com/faris.huskovic/webhook-poc.git
   #     branch: main
   #     strictSemvers: false
   - image:

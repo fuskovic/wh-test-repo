@@ -13,3 +13,12 @@ spec:
       quay:
         secretRef:
           name: quay-wh-secret
+    #
+    # mutual exclusivity validation
+    # - name: gitlab-wh-receiver
+    #   gitlab:
+    #     secretRef:
+    #       name: gitlab-wh-secret
+    #   github:
+    #     secretRef:
+    #       name: gitlab-wh-secret
