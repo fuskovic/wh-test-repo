@@ -10,15 +10,15 @@ spec:
   interval: 30m
   subscriptions:
   # github
-  # - git:
-  #     repoURL: https://github.com/fuskovic/wh-test-repo.git
-  #     branch: main
-  #     strictSemvers: false
+  - git:
+      repoURL: https://github.com/fuskovic/wh-test-repo.git
+      branch: main
+      strictSemvers: false
   # gitlab
   # - git:
   #     repoURL: https://gitlab.com/faris.huskovic/webhook-poc.git
   #     branch: main
   #     strictSemvers: false
-  - image:
-      repoURL: quay.io/faris_huskovic/webhook-poc
-      semverConstraint: ^1.26.0
+  # - image:
+  #     repoURL: quay.io/faris_huskovic/webhook-poc
+  #     semverConstraint: ^1.26.0

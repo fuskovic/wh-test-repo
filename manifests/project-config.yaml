@@ -9,16 +9,17 @@ spec:
     #   github:
     #     secretRef:
     #       name: gh-wh-secret
-    - name: quay-wh-receiver
-      quay:
-        secretRef:
-          name: quay-wh-secret
+    # - name: quay-wh-receiver
+    #   quay:
+    #     secretRef:
+    #       name: quay-wh-secret
     #
     # mutual exclusivity validation
     # - name: gitlab-wh-receiver
     #   gitlab:
     #     secretRef:
     #       name: gitlab-wh-secret
-    #   github:
-    #     secretRef:
-    #       name: gitlab-wh-secret
+    - name: gh-wh-receiver
+      github:
+        secretRef:
+          name: gh-wh-secret
